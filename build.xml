@@ -131,7 +131,7 @@
 		<javadoc packagenames="${packages}"             
 			 sourcepath="${src.dir}"             
 			 destdir="${javadocs.build.dir}"             
-			 classpath="${src.dir}"             
+			 classpath="${dir.src}"             
 			 author="true"             
 			 version="true"             
 			 use="true"             
