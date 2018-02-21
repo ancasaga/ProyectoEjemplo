@@ -126,7 +126,7 @@
 			</batchtest>
 		</junit>
     </target>
-	<target name="javadocs" depends="prepare">    
+	<target name="javadocs" depends="init">    
 		<mkdir dir="${dir.javadocs}"/>     
 		<javadoc packagenames="${packages}"             
 			 sourcepath="${dir.src}"             
