@@ -129,9 +129,9 @@
 	<target name="javadocs" depends="init">    
 		<mkdir dir="${dir.javadocs}"/>     
 		<javadoc packagenames="${packages}"             
-			 sourcepath="${dir.src}"             
+			 sourcepath="${src.dir}"             
 			 destdir="${javadocs.build.dir}"             
-			 classpath="${dir.src}"             
+			 classpath="${src.dir}"             
 			 author="true"             
 			 version="true"             
 			 use="true"             
