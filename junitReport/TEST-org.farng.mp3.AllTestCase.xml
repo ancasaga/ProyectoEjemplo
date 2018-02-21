@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="3" hostname="DESKTOP-SHCG8TP" name="org.farng.mp3.AllTestCase" skipped="0" tests="129" time="4.857" timestamp="2018-02-21T09:51:30">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="build.sysclasspath" value="last" />
+    <property name="os.name" value="Windows 10" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes" />
+    <property name="TODAY" value="February 21 2018" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\apache-ant-1.10.2" />
+    <property name="java.runtime.version" value="1.8.0_121-b13" />
+    <property name="package.name" value="org.farng.mp3" />
+    <property name="emma.build.dir" value="emmaClasses" />
+    <property name="user.name" value="Pixelabs" />
+    <property name="emma.coverage.dir" value="emmaResults" />
+    <property name="build.dir" value="classes" />
+    <property name="user.language" value="es" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_121\bin" />
+    <property name="ant.project.default-target" value="compile" />
+    <property name="doc.dir" value="doc" />
+    <property name="music.dir" value="music" />
+    <property name="ant.project.name" value="jid3lib" />
+    <property name="DSTAMP" value="20180221" />
+    <property name="tar.file" value="jid3lib-0.5.4.tar" />
+    <property name="java.version" value="1.8.0_121" />
+    <property name="version" value="0.5.4" />
+    <property name="user.timezone" value="" />
+    <property name="tar.gz.file" value="jid3lib-0.5.4.tar.gz" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="filename" value="jid3lib-0.5.4" />
+    <property name="ant.file.jid3lib" value="E:\UNI 2017-2018 MASTER\ProyectoEjemplo\build.xml" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_121\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="www.dir" value="www" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="junit.build.dir" value="junitClasses" />
+    <property name="junit.report.dir" value="junitReport" />
+    <property name="java.class.version" value="52.0" />
+    <property name="zip.file" value="jid3lib-0.5.4.zip" />
+    <property name="user.country" value="ES" />
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_121" />
+    <property name="dist.dir" value="dist" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="htdocs.dir" value="htdocs" />
+    <property name="ant.file" value="E:\UNI 2017-2018 MASTER\ProyectoEjemplo\build.xml" />
+    <property name="os.version" value="10.0" />
+    <property name="working.dir" value="working" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.121-b13" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\apache-ant-1.10.2\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="cp850" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\Pixelabs" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="test" />
+    <property name="jar.file" value="jid3lib-0.5.4.jar" />
+    <property name="java.library.path" value="C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files (x86)\OpenSSH\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Users\Pixelabs\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-ant-1.10.2\bin\;C:\Users\Pixelabs\AppData\Local\Microsoft\WindowsApps;C:\Users\Pixelabs\AppData\Roaming\npm;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="bin.dir" value="bin" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.2 compiled on February 3 2018" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher cleanall jar junit" />
+    <property name="java.class.path" value="C:\apache-ant-1.10.2\lib\ant-launcher.jar;C:\apache-ant-1.10.2\lib\ant-antlr.jar;C:\apache-ant-1.10.2\lib\ant-apache-bcel.jar;C:\apache-ant-1.10.2\lib\ant-apache-bsf.jar;C:\apache-ant-1.10.2\lib\ant-apache-log4j.jar;C:\apache-ant-1.10.2\lib\ant-apache-oro.jar;C:\apache-ant-1.10.2\lib\ant-apache-regexp.jar;C:\apache-ant-1.10.2\lib\ant-apache-resolver.jar;C:\apache-ant-1.10.2\lib\ant-apache-xalan2.jar;C:\apache-ant-1.10.2\lib\ant-commons-logging.jar;C:\apache-ant-1.10.2\lib\ant-commons-net.jar;C:\apache-ant-1.10.2\lib\ant-jai.jar;C:\apache-ant-1.10.2\lib\ant-javamail.jar;C:\apache-ant-1.10.2\lib\ant-jdepend.jar;C:\apache-ant-1.10.2\lib\ant-jmf.jar;C:\apache-ant-1.10.2\lib\ant-jsch.jar;C:\apache-ant-1.10.2\lib\ant-junit.jar;C:\apache-ant-1.10.2\lib\ant-junit4.jar;C:\apache-ant-1.10.2\lib\ant-launcher.jar;C:\apache-ant-1.10.2\lib\ant-netrexx.jar;C:\apache-ant-1.10.2\lib\ant-swing.jar;C:\apache-ant-1.10.2\lib\ant-testutil.jar;C:\apache-ant-1.10.2\lib\ant-xz.jar;C:\apache-ant-1.10.2\lib\ant.jar" />
+    <property name="release.notes.dir" value="releaseNotes" />
+    <property name="TSTAMP" value="1051" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="C:\Users\Pixelabs\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\UNI 2017-2018 MASTER\ProyectoEjemplo" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="E:\UNI 2017-2018 MASTER\ProyectoEjemplo" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="C:\apache-ant-1.10.2\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="sun.stderr.encoding" value="cp850" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="src" />
+    <property name="ant.file.type.jid3lib" value="file" />
+    <property name="javadoc.dir" value="api" />
+    <property name="ant.project.invoked-targets" value="cleanall,jar,junit" />
+  </properties>
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testReplaceEOLNwithCRLF" time="0.002" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testToSentenceCase" time="0.001" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testIsMatchingParenthesis" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testIsID3v2_4FrameIdentifier" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testIsID3v2_3FrameIdentifier" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testAppendBeforeExtension" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testGetWholeNumber" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testFindMatchingParenthesis" time="0.001" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testIsID3v2_2FrameIdentifier" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testIsLyrics3v2FieldIdentifier" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testGetFrameDescription" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testPadString" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testReplaceWord" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testToTitleCase" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testFindNumber" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testTruncate" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testStripChar" time="0.0" />
+  <testcase classname="org.farng.mp3.TagUtilityTest" name="testCopyFile" time="0.484" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testAdjustID3v2Padding" time="0.886" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetFilenameTag" time="0.069" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetMp3StartByte" time="0.069" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testHasLyrics3Tag" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsUnsynchronized" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsVariableBitRate" time="0.038" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetFilenameTag" time="0.047" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetFrameAcrossTags" time="0.084" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetLyrics3Tag" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetVariableBitRate" time="0.069" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testHasFilenameTag" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetLyrics3Tag" time="0.038" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetModeExtension" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetMpegVersion" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetUnsynchronizedFragments" time="0.154" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsCopyProtected" time="0.038" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetFrameAcrossTags" time="0.037" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetMp3file" time="0.024" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testHasID3v2Tag" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsPrivacy" time="0.05" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetBitRate" time="0.035" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetFrequency" time="0.047" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetID3v1Tag" time="0.084" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetID3v2Tag" time="0.038" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsHome" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsPadding" time="0.069" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testDelete" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSave" time="1.637" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSeekMP3Frame" time="0.054" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetID3v1Tag" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetEmphasis" time="0.052" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetID3v2Tag" time="0.017" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testSetMp3file" time="0.031" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetLayer" time="0.049" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testIsProtection" time="0.035" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testHasID3v1Tag" time="0.032" />
+  <testcase classname="org.farng.mp3.MP3FileTest" name="testGetMode" time="0.053" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetFilename" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testToString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testWriteString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetFilename" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testReadString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetDescription" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetDescription" time="0.0" />
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testLyrics3v1" time="0.0" />
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testLyrics3v2" time="0.057">
+    <failure message="expected:&lt;Lyrics3v2.00 147&#xa;INF&#xd;&#xa;Additional Information = My Comment&#xd;&#xa;&#xa;AUT&#xd;&#xa;Author = My Author or Composer&#xd;&#xa;&#xa;EAL&#xd;&#xa;Album = My Album Title&#xd;&#xa;&#xa;ETT&#xd;&#xa;Title = My Song Title&#xd;&#xa;&#xa;LYR : timeStamp = , lyric = My Song Lyrics&#xa;&#xa;EAR&#xd;&#xa;Artist = My Lead Artist&#xd;&#xa;&#xa;&gt; but was:&lt;Lyrics3v2.00 147&#xa;AUT&#xd;&#xa;Author = My Author or Composer&#xd;&#xa;&#xa;INF&#xd;&#xa;Additional Information = My Comment&#xd;&#xa;&#xa;EAL&#xd;&#xa;Album = My Album Title&#xd;&#xa;&#xa;ETT&#xd;&#xa;Title = My Song Title&#xd;&#xa;&#xa;LYR : timeStamp = , lyric = My Song Lyrics&#xa;&#xa;EAR&#xd;&#xa;Artist = My Lead Artist&#xd;&#xa;&#xa;&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;Lyrics3v2.00 147
+INF
+Additional Information = My Comment
+
+AUT
+Author = My Author or Composer
+
+EAL
+Album = My Album Title
+
+ETT
+Title = My Song Title
+
+LYR : timeStamp = , lyric = My Song Lyrics
+
+EAR
+Artist = My Lead Artist
+
+&gt; but was:&lt;Lyrics3v2.00 147
+AUT
+Author = My Author or Composer
+
+INF
+Additional Information = My Comment
+
+EAL
+Album = My Album Title
+
+ETT
+Title = My Song Title
+
+LYR : timeStamp = , lyric = My Song Lyrics
+
+EAR
+Artist = My Lead Artist
+
+&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.farng.mp3.id3.AbstractMP3Tag.testLyrics3v2(AbstractMP3Tag.java:381)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1630)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1045)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2187)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:346)
+	at org.apache.tools.ant.Target.execute(Target.java:448)
+	at org.apache.tools.ant.Target.performTasks(Target.java:469)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1370)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+	at org.apache.tools.ant.Main.runBuild(Main.java:849)
+	at org.apache.tools.ant.Main.startAnt(Main.java:228)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:283)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+</failure>
+  </testcase>
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testID3v2_3" time="0.0">
+    <failure message="expected:&lt;ID3v2.30 210&#xa;compression        = false&#xa;unsynchronization  = false&#xa;crcData            = 0&#xa;crcDataFlag        = false&#xa;experimental       = false&#xa;extended           = false&#xa;paddingSize        = 0&#xa;TRCK&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 3&#xd;&#xa;&#xa;TIT2&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Song Title&#xd;&#xa;&#xa;TALB&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Album Title&#xd;&#xa;&#xa;TYER&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 1990&#xd;&#xa;&#xa;USLTeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Lyrics/Text = My Song Lyrics&#xd;&#xa;&#xa;TCON&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 31&#xd;&#xa;&#xa;TCOM&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Author or Composer&#xd;&#xa;&#xa;COMMeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Text = My Comment&#xd;&#xa;&#xa;TPE1&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Lead Artist&#xd;&#xa;&#xa;&#xa;&gt; but was:&lt;ID3v2.30 195&#xa;compression        = false&#xa;unsynchronization  = false&#xa;crcData            = 0&#xa;crcDataFlag        = false&#xa;experimental       = false&#xa;extended           = false&#xa;paddingSize        = 0&#xa;TRCK&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 3&#xd;&#xa;&#xa;TIT2&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Song Title&#xd;&#xa;&#xa;TALB&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Album Title&#xd;&#xa;&#xa;USLTeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Lyrics/Text = My Song Lyrics&#xd;&#xa;&#xa;TCON&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 31&#xd;&#xa;&#xa;TCOM&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Author or Composer&#xd;&#xa;&#xa;COMMeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Text = My Comment&#xd;&#xa;&#xa;TPE1&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Lead Artist&#xd;&#xa;&#xa;&#xa;&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;ID3v2.30 210
+compression        = false
+unsynchronization  = false
+crcData            = 0
+crcDataFlag        = false
+experimental       = false
+extended           = false
+paddingSize        = 0
+TRCK
+Text Encoding = ISO-8859-1
+Text = 3
+
+TIT2
+Text Encoding = ISO-8859-1
+Text = My Song Title
+
+TALB
+Text Encoding = ISO-8859-1
+Text = My Album Title
+
+TYER
+Text Encoding = ISO-8859-1
+Text = 1990
+
+USLTeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Lyrics/Text = My Song Lyrics
+
+TCON
+Text Encoding = ISO-8859-1
+Text = 31
+
+TCOM
+Text Encoding = ISO-8859-1
+Text = My Author or Composer
+
+COMMeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Text = My Comment
+
+TPE1
+Text Encoding = ISO-8859-1
+Text = My Lead Artist
+
+
+&gt; but was:&lt;ID3v2.30 195
+compression        = false
+unsynchronization  = false
+crcData            = 0
+crcDataFlag        = false
+experimental       = false
+extended           = false
+paddingSize        = 0
+TRCK
+Text Encoding = ISO-8859-1
+Text = 3
+
+TIT2
+Text Encoding = ISO-8859-1
+Text = My Song Title
+
+TALB
+Text Encoding = ISO-8859-1
+Text = My Album Title
+
+USLTeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Lyrics/Text = My Song Lyrics
+
+TCON
+Text Encoding = ISO-8859-1
+Text = 31
+
+TCOM
+Text Encoding = ISO-8859-1
+Text = My Author or Composer
+
+COMMeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Text = My Comment
+
+TPE1
+Text Encoding = ISO-8859-1
+Text = My Lead Artist
+
+
+&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.farng.mp3.id3.AbstractMP3Tag.testID3v2_3(AbstractMP3Tag.java:510)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1630)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1045)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2187)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:346)
+	at org.apache.tools.ant.Target.execute(Target.java:448)
+	at org.apache.tools.ant.Target.performTasks(Target.java:469)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1370)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+	at org.apache.tools.ant.Main.runBuild(Main.java:849)
+	at org.apache.tools.ant.Main.startAnt(Main.java:228)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:283)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+</failure>
+  </testcase>
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testID3v2_2" time="0.0">
+    <failure message="expected:&lt;ID3v2_2.20 - 174 bytes&#xa;compression        = false&#xa;unsynchronization  = false&#xa;TRCK&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 3&#xd;&#xa;&#xa;TIT2&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Song Title&#xd;&#xa;&#xa;TALB&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Album Title&#xd;&#xa;&#xa;TYER&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 1990&#xd;&#xa;&#xa;USLTeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Lyrics/Text = My Song Lyrics&#xd;&#xa;&#xa;TCON&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 31&#xd;&#xa;&#xa;TCOM&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Author or Composer&#xd;&#xa;&#xa;COMMeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Text = My Comment&#xd;&#xa;&#xa;TPE1&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Lead Artist&#xd;&#xa;&#xa;&#xa;&gt; but was:&lt;ID3v2_2.20 - 195 bytes&#xa;compression        = false&#xa;unsynchronization  = false&#xa;TRCK&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 3&#xd;&#xa;&#xa;TIT2&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Song Title&#xd;&#xa;&#xa;TALB&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Album Title&#xd;&#xa;&#xa;USLTeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Lyrics/Text = My Song Lyrics&#xd;&#xa;&#xa;TCON&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = 31&#xd;&#xa;&#xa;TCOM&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Author or Composer&#xd;&#xa;&#xa;COMMeng&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Language = English&#xd;&#xa;Description = &#xd;&#xa;Text = My Comment&#xd;&#xa;&#xa;TPE1&#xd;&#xa;Text Encoding = ISO-8859-1&#xd;&#xa;Text = My Lead Artist&#xd;&#xa;&#xa;&#xa;&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;ID3v2_2.20 - 174 bytes
+compression        = false
+unsynchronization  = false
+TRCK
+Text Encoding = ISO-8859-1
+Text = 3
+
+TIT2
+Text Encoding = ISO-8859-1
+Text = My Song Title
+
+TALB
+Text Encoding = ISO-8859-1
+Text = My Album Title
+
+TYER
+Text Encoding = ISO-8859-1
+Text = 1990
+
+USLTeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Lyrics/Text = My Song Lyrics
+
+TCON
+Text Encoding = ISO-8859-1
+Text = 31
+
+TCOM
+Text Encoding = ISO-8859-1
+Text = My Author or Composer
+
+COMMeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Text = My Comment
+
+TPE1
+Text Encoding = ISO-8859-1
+Text = My Lead Artist
+
+
+&gt; but was:&lt;ID3v2_2.20 - 195 bytes
+compression        = false
+unsynchronization  = false
+TRCK
+Text Encoding = ISO-8859-1
+Text = 3
+
+TIT2
+Text Encoding = ISO-8859-1
+Text = My Song Title
+
+TALB
+Text Encoding = ISO-8859-1
+Text = My Album Title
+
+USLTeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Lyrics/Text = My Song Lyrics
+
+TCON
+Text Encoding = ISO-8859-1
+Text = 31
+
+TCOM
+Text Encoding = ISO-8859-1
+Text = My Author or Composer
+
+COMMeng
+Text Encoding = ISO-8859-1
+Language = English
+Description = 
+Text = My Comment
+
+TPE1
+Text Encoding = ISO-8859-1
+Text = My Lead Artist
+
+
+&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at org.farng.mp3.id3.AbstractMP3Tag.testID3v2_2(AbstractMP3Tag.java:444)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1630)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1045)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2187)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:346)
+	at org.apache.tools.ant.Target.execute(Target.java:448)
+	at org.apache.tools.ant.Target.performTasks(Target.java:469)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1370)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+	at org.apache.tools.ant.Main.runBuild(Main.java:849)
+	at org.apache.tools.ant.Main.startAnt(Main.java:228)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:283)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+</failure>
+  </testcase>
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testID3v1_1" time="0.0" />
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testID3v2_4" time="0.0" />
+  <testcase classname="org.farng.mp3.id3.AbstractMP3Tag" name="testID3v1" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testWriteString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testReadString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testGetValue" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testSetValue" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testReadByteArray" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testGetIdentifier" time="0.0" />
+  <testcase classname="org.farng.mp3.object.AbstractMP3ObjectTest" name="testWriteByteArray" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanByteTest" name="testToString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanByteTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanByteTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanByteTest" name="testReadByteArray" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanByteTest" name="testGetBitPosition" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanByteTest" name="testWriteByteArray" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanStringTest" name="testToString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanStringTest" name="testWriteString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanStringTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanStringTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectBooleanStringTest" name="testReadString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectGroupRepeatedTest" name="testAddObject" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectGroupRepeatedTest" name="testAddProperty" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectGroupRepeatedTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectGroupRepeatedTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectGroupRepeatedTest" name="testGetObjectList" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectGroupRepeatedTest" name="testGetPropertyList" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testGetText" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testSetText" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testSetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testToString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testGetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testReadByteArray" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectID3v2LyricLineTest" name="testWriteByteArray" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetFilename" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testToString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testWriteString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetFilename" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testReadString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetDescription" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetDescription" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetFilename" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetTimeStamp" time="0.001" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testToString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testWriteString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetTimeStamp" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetFilename" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testEquals" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetSize" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testReadString" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testGetDescription" time="0.0" />
+  <testcase classname="org.farng.mp3.object.ObjectLyrics3ImageTest" name="testSetDescription" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

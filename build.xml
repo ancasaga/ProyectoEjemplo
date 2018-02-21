@@ -1,0 +1,160 @@
+<project name = "jid3lib" default = "compile" basedir = ".">
+
+    <!-- START Project settings -->
+    <property name = "package.name" value = "org.farng.mp3" />
+    <property name = "version" value = "0.5.4" />
+
+	<property name = "build.sysclasspath" value = "last" />
+	
+    <property name = "src.dir" value = "src" />
+    <property name = "lib.dir" value = "lib" />
+    <property name = "test.dir" value = "test" />
+    <property name = "music.dir" value = "music" />
+    <property name = "doc.dir" value = "doc" />
+    <property name = "www.dir" value = "www" />
+    <property name = "release.notes.dir" value = "releaseNotes" />
+
+    <property name = "build.dir" value = "classes" />
+    <property name = "bin.dir" value = "bin" />
+    <!-- from eclipse? -->
+    <property name = "working.dir" value = "working" />
+    <property name = "dist.dir" value = "dist" />
+    <property name = "htdocs.dir" value = "htdocs" />
+    <property name = "emma.build.dir" value = "emmaClasses" />
+    <property name = "emma.coverage.dir" value = "emmaResults" />
+    <property name = "javadoc.dir" value = "api" />
+
+	<property name = "junit.build.dir" value = "junitClasses" />
+    <property name = "junit.report.dir" value = "junitReport" />
+	
+    <property name = "filename" value = "jid3lib-${version}" />
+    <property name = "jar.file" value = "${filename}.jar" />
+    <property name = "zip.file" value = "${filename}.zip" />
+    <property name = "tar.file" value = "${filename}.tar" />
+    <property name = "tar.gz.file" value = "${filename}.tar.gz" />
+
+	<path id = "emma.lib">
+        <pathelement location = "${lib.dir}/emma.jar" />
+        <pathelement location = "${lib.dir}/emma_ant.jar" />
+        <pathelement location = "${emma.build.dir}/**" />
+    </path>
+ 
+    <taskdef resource = "emma_ant.properties" classpathref = "emma.lib" />
+
+	
+    <path id = "lib.jarfiles">
+        <fileset dir = "${lib.dir}" includes = "**/*.jar" />
+    </path>
+
+    <target name = "clean" description = "Remove all unnecessary files after a jar build">
+        <delete failonerror = "false">
+            <fileset dir = "${src.dir}" includes = "**/*.class" />
+        </delete>
+        <delete failonerror = "false" dir = "${emma.build.dir}" />
+		<delete failonerror = "false" dir = "${junit.build.dir}" />
+        <delete failonerror = "false" dir = "${junit.report.dir}" />
+        <delete failonerror = "false" dir = "${build.dir}" />
+        <delete failonerror = "false" dir = "${working.dir}" />
+        <delete failonerror = "false" file = "${dist.dir}/${tar.file}" />
+    </target>
+
+    <target name = "cleanall" depends = "clean" description = "Remove all files created by this build script">
+        <delete failonerror = "false" dir = "${bin.dir}" />
+        <delete failonerror = "false" dir = "${dist.dir}" />
+        <delete failonerror = "false" dir = "${emma.coverage.dir}" />
+        <delete failonerror = "false" dir = "${javadoc.dir}" />
+        <delete failonerror = "false" dir = "${htdocs.dir}" />
+    </target>
+
+    <target name = "init" description = "Create all directories neede by this script">
+        <tstamp />
+        <mkdir dir = "${working.dir}" />
+        <mkdir dir = "${emma.build.dir}" />
+		<mkdir dir = "${emma.coverage.dir}" />
+		<mkdir dir = "${junit.build.dir}" />
+        <mkdir dir = "${junit.report.dir}" />
+        <mkdir dir = "${javadoc.dir}" />
+        <mkdir dir = "${build.dir}" />
+        <mkdir dir = "${working.dir}/${filename}" />
+        <mkdir dir = "${working.dir}/${filename}/${dist.dir}" />
+        <mkdir dir = "${dist.dir}" />
+    </target>
+
+    <target name = "compile"
+            depends = "init"
+            description = "Compile all source files to class files into '${build.dir}'">
+        <javac
+                encoding = "ISO-8859-1"
+                destdir = "${build.dir}"
+                classpathref = "lib.jarfiles"
+                optimize = "on">
+            <src path = "${src.dir}" />
+        </javac>
+    </target>
+
+    <target name = "jar"
+            depends = "init, compile"
+            description = "Create the library jar file into '${dist.dir}/${jar.file}'">
+        <jar destfile = "${dist.dir}/${jar.file}">
+            <fileset dir = "${build.dir}" />
+        </jar>
+    </target>
+	<target name = "junit" depends = "init">
+        <javac
+                encoding = "ISO-8859-1"
+                destdir = "${junit.build.dir}"
+                classpathref = "lib.jarfiles"
+                debug = "on"
+                deprecation = "on"
+                optimize = "on">
+            <src path = "${src.dir}" />
+            <src path = "${test.dir}" />
+        </javac>
+ 
+        <junit fork="no" printsummary="no" haltonfailure="no" showoutput="true" filtertrace="false">
+			<classpath refid="lib.jarfiles" />
+			<classpath>
+						<pathelement path = "${java.class.path}" />
+				<pathelement path = "${junit.build.dir}" />
+			</classpath>
+	 
+			<batchtest todir="${junit.report.dir}">
+				<fileset dir="${junit.build.dir}">
+					<include name="org/farng/mp3/AllTestCase.class" />
+				</fileset>
+				<formatter type="xml" />
+			</batchtest>
+		</junit>
+    </target>
+	<target name = "emma" depends = "init">
+       <javac
+                encoding = "ISO-8859-1"
+                destdir = "${emma.build.dir}"
+                classpathref = "lib.jarfiles"
+                debug = "on"
+                deprecation = "on"
+                optimize = "on">
+            <src path = "${src.dir}" />
+            <src path = "${test.dir}" />
+        </javac>
+ 
+        <emmajava
+                 enabled = "true"
+                 libclasspathref = "lib.jarfiles"
+                 fullmetadata = "yes"
+                 filter = "org.farng.*"
+                 sourcepath = "${src.dir}"
+                 classname = "org.farng.mp3.AllTestCase"
+                 fork = "true"
+                 classpathref = "lib.jarfiles"
+                 failonerror = "true">
+             <classpath>
+                 <pathelement path = "${emma.build.dir}" />
+                 <pathelement path = "${java.class.path}" />
+             </classpath>
+             <txt outfile = "${emma.coverage.dir}/coverage.txt" />
+             <xml outfile = "${emma.coverage.dir}/coverage.xml" />
+             <html outfile = "${emma.coverage.dir}/coverage.html" />
+        </emmajava>
+</target>
+</project>
