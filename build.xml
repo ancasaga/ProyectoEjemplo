@@ -126,18 +126,7 @@
 			</batchtest>
 		</junit>
     </target>
-	<target name="javadocs" depends="init">    
-		<mkdir dir="${dir.javadocs}"/>     
-		<javadoc packagenames="${packages}"             
-			 sourcepath="${src.dir}"             
-			 destdir="${javadocs.build.dir}"             
-			 classpath="${dir.src}"             
-			 author="true"             
-			 version="true"             
-			 use="true"             
-			 windowtitle="${app.name} API"             
-			     />  
-	</target>
+	
 	<target name = "emma" depends = "init">
        <javac
                 encoding = "ISO-8859-1"
